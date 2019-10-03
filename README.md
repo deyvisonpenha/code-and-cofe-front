@@ -66,3 +66,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+Após criar o projeto com o comando yarn create react-app frontend , deletamos os arquivos que não utilizaremos.
+O react trabalha com o conceito de componente, que para um entendimento mais rapido pode ser visto como uma função que retorna html (jsx).
+
+adcionar a pasta assets (imagens e logos) dentro da pasta src.
+modificar os arquivos app.js e app.css
+
+para fazer as chamadas a nossa api vamos utilizar uma biblioteca chamada axios.
+
+Dentro da pasta src, criaremos a pasta services e dentro dela o arquivo api.js que vai conter as informações de conexao da api utilizando o axios.
+
+dentro de app.js importamos api.js
+e proceguimos na configuração do api.js para fazer a chamada a api com o email passado pelo form
+
+yarn add react-router-dom
+
+ciar o arquivo routes.js dentro de src
+
+para fazer a troca de paginas temos que usar o history como parametro da função. history.push('rota')
