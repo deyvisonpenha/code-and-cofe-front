@@ -8,6 +8,7 @@ export default function New({ history }) {
   const [company, setCompany] = useState('');
   const [techs, setTechs] = useState('');
   const [price, setPrice] = useState('');
+  const [site, setSite] = useState('');
   const [thumbnail, setThumbnail] = useState(null);
 
   const preview = useMemo(() => {
@@ -24,6 +25,7 @@ export default function New({ history }) {
     data.append('company', company);
     data.append('techs', techs);
     data.append('price', price);
+    data.append('site', site);
 
     await api.post('/spots', data, {
       headers: { user_id },
@@ -49,7 +51,13 @@ export default function New({ history }) {
         value={company}
         onChange={event => setCompany(event.target.value)}
       />
-
+      <label htmlFor="company">SITE *</label>
+      <input
+        id="site"
+        placeholder="Sua site incrível"
+        value={site}
+        onChange={event => setSite(event.target.value)}
+      />
       <label htmlFor="techs">TECNOLOGIAS * <span>(Separadas por virgula)</span></label>
       <input
         id="techs"
