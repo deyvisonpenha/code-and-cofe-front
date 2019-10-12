@@ -86,3 +86,7 @@ yarn add react-router-dom
 ciar o arquivo routes.js dentro de src
 
 para fazer a troca de paginas temos que usar o history como parametro da função. history.push('rota')
+
+useEffect( ()=> {}, [filter, settings]) é uma função que vai executar toda vez que algumas das variáveis do arrei modificar, por exemplo sempre que um usuario aplicar um filtro ele deve retornar uma nova listagem da api.
+
+useMeno: parecido com o useEffect. quando uma variavel mudar, ele atualiza outra variavel.

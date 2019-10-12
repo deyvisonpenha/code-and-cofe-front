@@ -6,7 +6,7 @@ import logo from './assets/logo.svg';
 function App() {
   return (
     <div className="container">
-      <img src={logo} alt="AirCnC" />
+      <img className="logo" src={logo} alt="CnC" />
 
       <div className="content">
         <Routes />

@@ -34,7 +34,7 @@ body , input, button {
 .content {
   width: 100%;
   background: #FFF;
-  margin-top: 50px;
+  margin-top: 25px;
   border-radius: 4px;
   padding: 30px;
 }
@@ -87,4 +87,8 @@ body , input, button {
 
 .content button.btn:hover {
   background: #e14f50;
+}
+
+.logo {
+  height: 100px;
 }
