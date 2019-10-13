@@ -34,6 +34,11 @@ export default function New({ history }) {
     history.push('/dashboard');
 
   }
+
+  function handleCancel() {
+    history.push('/dashboard');
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <label
@@ -73,7 +78,10 @@ export default function New({ history }) {
         value={price}
         onChange={event => setPrice(event.target.value)}
       />
-      <button type="submit" className="btn">Cadastrar</button>
+      <div className="row-buttons">
+        <button className="btn-new" onClick={handleCancel} >Cancelar</button>
+        <button type="submit" className="btn-new">Cadastrar</button>
+      </div>
     </form >
   );
 }
